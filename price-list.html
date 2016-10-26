@@ -5,84 +5,86 @@
 	<title>Прайс лист</title>
 </head>
 <body>
-	<header class="main-header">
+	<header class="header">
 		<div class="container">
-			<nav class="main-navigation">
+			<nav class="header_nav">
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a class="selected" href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a class="is-current" href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
-			<div class="user-block">
-				<a class="login" href="#">Вход</a>
+			<div class="header_login">
+				<a href="#">Вход</a>
 			</div>			
 		</div>		
 	</header>
-	<main class="container">
-		<div class="container-header">
-			<h1 class="container-title">Средства для ухода</h1>
-			<div class="container-breadcrumbs">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a class="selected" href="#">Прайс-лист</a></li>
-				</ul>	
-			</div>
-		</div>
-		<div class="price-list-title">истинно мужская классика</div>
-		<section class="price-list-text">
-			<h2>Мы используем только лучшие средства:</h2>
-			<ul>
-				<li>baxter of california</li>
-				<li>mr natty</li>
-				<li>suavecito</li>
-				<li>malin+goetz</li>
-			</ul>
-		</section>
-		<section class="price-list-table">
-			<h2>Цены на услуги наших мастеров</h2>
-			<table>
-				<tr>
-					<td>стрижка</td>
-					<td>1500 р.</td>
-				</tr>
-				<tr>
-					<td>стрижка бороды</td>
-					<td>500 р.</td>
-				</tr>
-				<tr>
-					<td>накрутка усов</td>
-					<td>350 р.</td>
-				</tr>
-			</table>
-		</section>
-		<section class="price-list-text">
-			<h2>Несколько слов о нас</h2>
-			<div class="price-list-text-left">
-			наша парикмахерская занимается исключительно мужскими стрижками. стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. мы не работаем на количество, мы делаем качество. 	
-			</div>
-			<div class="price-list-text-right">
-			наша парикмахерская расположена в центре города, поэтому сделать стильную стрижку можно сделать в любое время, даже в обеденный перерыв. здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя свободно и комфортоно.	
-			</div>
-		</section>
-	</main>
-	<footer class="main-footer">
+	<main class="content">
 		<div class="container">
-			<section class="footer-contacts">
+			<div class="content_header">
+				<h1 class="content_title">Средства для ухода</h1>
+				<div class="content_breadcrumbs">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a class="is-current" href="#">Прайс-лист</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="price-list_title">истинно мужская классика</div>
+			<section class="price-list_info-block">
+				<h2>Мы используем только лучшие средства:</h2>
+				<ul>
+					<li>baxter of california</li>
+					<li>mr natty</li>
+					<li>suavecito</li>
+					<li>malin+goetz</li>
+				</ul>
+			</section>
+			<section class="price-list_table">
+				<h2>Цены на услуги наших мастеров</h2>
+				<table>
+					<tr>
+						<td>стрижка</td>
+						<td>1500 р.</td>
+					</tr>
+					<tr>
+						<td>стрижка бороды</td>
+						<td>500 р.</td>
+					</tr>
+					<tr>
+						<td>накрутка усов</td>
+						<td>350 р.</td>
+					</tr>
+				</table>
+			</section>
+			<section class="price-list_info-block">
+				<h2>Несколько слов о нас</h2>
+				<div class="price-list_text-left">
+				наша парикмахерская занимается исключительно мужскими стрижками. стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. мы не работаем на количество, мы делаем качество. 	
+				</div>
+				<div class="price-list_text-right">
+				наша парикмахерская расположена в центре города, поэтому сделать стильную стрижку можно сделать в любое время, даже в обеденный перерыв. здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя свободно и комфортоно.	
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<section class="footer_contacts">
 		        Барбершоп «Бородинский»<br>
 		        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 		        <a href="#">Как нас найти?</a><br>
 		        Телефон: +7 (812) 666-02-66				
 			</section>
-			<section class="footer-social">
+			<section class="footer_social">
 				<p>Давайте дружить!</p>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<a class="btn btn-social btn-social-vk" href="#">Вконтакте</a>
+				<a class="btn btn-social btn-social-fb" href="#">Фейсбук</a>
+				<a class="btn btn-social btn-social-inst" href="#">Инстаграм</a>
 			</section>
-			<section class="footer-copyright">
+			<section class="footer_copyright">
 			    <p>Разработано:</p>
 				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>	
 			</section>
