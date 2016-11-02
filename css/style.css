@@ -1,9 +1,20 @@
 body {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
   font-weight: bold;
   font-family: "ptsans narrowbold" sans-serif;
+    /*только для сетки*/
+  background-color: #d8d7d3;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
 }
 
 h1 {
@@ -16,3 +27,316 @@ h2 {
   line-height: 30px;
   color: 000000;
 }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  margin-bottom: 50px;
+  /* Только для оформления сетки */
+  height: 70px;    
+  background-color: #a68b8f; 
+}
+
+.logo {  
+  float: left;
+  width: 150px;  
+  margin-right: 10px; 
+
+  /*только для сетки*/
+  min-height: 70px; 
+  background-color: #c7b4b4; 
+}
+
+.header__nav {
+  float: left;
+  width: 620px;
+  margin-right: 20px;
+  /*только для сетки*/
+  min-height: 70px; 
+  background-color: #c7b4b4; 
+}
+
+.header__login {  
+  float: right;
+  width: 140px;  
+  /*только для сетки*/
+  min-height: 70px; 
+  background-color: #c7b4b4;  
+}
+
+.content_header {  
+  margin:0;
+  margin-bottom: 20px;  
+}
+
+.content_header-title {
+  margin-bottom: 20px;
+  /**/
+  background-color: #a68b8f;
+}
+
+.content_header-breadcrumbs {
+  margin-bottom: 50px;
+  /*только для сетки*/
+  min-height: 20px;
+  background-color: #c7b4b4;
+}
+
+.filter-form {
+  float: left;
+  margin-right: 20px;
+  width:220px;
+  /*только для сетки*/
+  background-color: #c7b4b4;
+}
+
+.filter-form_title {
+  margin-bottom: 30px;
+}
+
+.filter-form_manufacturers {
+  display: inline-block;
+  min-height: 260px;
+  margin-bottom: 50px;
+  /*только для сетки*/
+  background-color: #A9A9A9;
+}
+
+.filter-form_groups {
+  display: inline-block;
+  min-height: 170px;
+  margin-bottom: 50px;
+  /*только для сетки*/
+  background-color: #A9A9A9;
+}
+
+.content_products {
+  float: right;
+  width: 700px;
+  font-size: 0;
+  /*только для сетки*/
+  background-color: #c7b4b4;
+}
+
+.products {
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.product {
+  display: inline-block;
+  width: 220px;
+  height: 288px;
+  margin-bottom: 25px;  
+  margin-right: 20px;
+  font-size: 14px;
+  /*только для сетки*/
+  background-color: #c7b4b4;
+
+}
+
+.product:nth-of-type(3n) {
+  margin:0;
+  margin-right: 0;
+}
+
+figure {
+  margin:0;
+}
+
+.product_photo {
+  width: 220px;
+  height: 165px;
+  margin-bottom: 12px;
+}
+
+.product_name {
+  width: 220px;
+  height: 36px;
+  margin-bottom: 12px;
+  /*только для сетки*/
+  background-color: #A9A9A9;
+}
+
+.product__content {
+
+}
+
+.product_photos {
+  float: left;
+  margin-right: 90px;
+  width: 460px;
+}
+
+.product_info-block {
+  float: right;
+  width: 390px;
+}
+
+.product_main-photo {
+  margin-bottom: 30px;
+}
+
+.gallery {
+  font-size:0;
+}
+
+.gallery-item {
+  width: 140px;
+  height: 150px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.gallery-item:nth-of-type(3n){
+  margin-right: 0;
+}
+
+.product_info-block {
+  padding-top: 20px;
+}
+
+.product_availability {
+  margin-bottom: 35px;
+    /*только для сетки*/
+  min-height: 24px;
+  background-color: #A9A9A9;
+}
+
+.content_paginator {
+  width: 193px;
+  height: 43px;
+  /*только для сетки*/
+  background-color: #a68b8f;
+}
+
+
+.price-list_title {
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 60px;
+  /*только для сетки*/
+  background-color: #c7b4b4;
+  min-height: 48px;
+}
+
+.price-list_info-block {
+  float: left;
+  width: 380px;
+  min-height: 220px;
+  margin-right: 100px;
+  /*только для сетки*/
+  background-color: #c7b4b4;
+}
+
+.price-list_table {
+  float: left;
+  width: 460px;
+  min-height: 220px;
+  /*только для сетки*/
+  background-color: #c7b4b4;
+}
+
+.price-list {
+  margin-bottom: 60px;
+}
+
+.price-list_info-block h2, 
+.price-list_table h2,
+.price-list_info h2 {
+  width: 240px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  min-height: 60px;
+  /*только для сеток*/
+  height: 60px;
+  background-color: #A9A9A9;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;  
+}
+
+td {
+  width: 50%;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.price-text {
+  margin-bottom: 25px;
+}
+
+
+.price-list_text-left {
+  float: left;
+  width: 380px;
+  min-height: 96px;
+  margin-right: 100px;
+  /*только для сеток*/
+  height: 96px;
+  background-color: #A9A9A9;
+}
+
+.price-list_text-right {
+  float: left;
+  min-height: 96px;
+  width: 380px;
+  /*только для сеток*/
+  height: 96px;
+  background-color: #A9A9A9;
+}
+
+.footer {
+  padding-top:57px;
+  padding-bottom:36px;
+  margin-top: 50px;
+  /*только для сетки*/
+  background-color: #a68b8f;
+}
+
+.footer_contacts {
+  float: left;
+  width: 310px;
+  margin-right: 90px;
+  min-height: 92px;
+  /*только для сетки*/
+  background-color: #d8d7d3;
+}
+
+.footer_social {
+  float: left;
+  width: 140px;
+  min-height: 92px;
+  /*только для сетки*/
+  background-color: #d8d7d3;
+}
+
+.footer_copyright {
+  float: right;
+  width: 140px;
+  min-height: 92px;
+  /*только для сетки*/
+  background-color: #d8d7d3;
+}
+/*.overlay {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container2 {
+  /*width: 1200px;
+  height: 1173px;*/
+ /* background-size: 1200px 1173px;
+  background-image: url("barbershop-shop.png");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}*/
